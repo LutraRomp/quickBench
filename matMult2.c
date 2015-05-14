@@ -18,6 +18,9 @@ int main(){
     }
 
     for(n=0; n<ITTER; n++){
+        for(i=0; i<M_SIZE; i++)
+            for(j=0; j<M_SIZE; j++)
+                c[i][j]=0.0;
         for(j=0; j<M_SIZE; j++){
             for(i=0; i<M_SIZE; i++){
                 sum=0;

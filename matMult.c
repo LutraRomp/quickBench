@@ -18,6 +18,9 @@ int main(){
     }
 
     for(n=0; n<ITTER; n++){
+        for(i=0; i<M_SIZE; i++)
+            for(j=0; j<M_SIZE; j++)
+                c[i][j]=0.0;
         for(i=0; i<M_SIZE; i++){
             for(j=0; j<M_SIZE; j++){
                 sum=0;
@@ -28,6 +31,8 @@ int main(){
             }
          }
     }
+
+    for (i=0; i<20; i++) printf("%0.12f\n", c[i][i]);
 
     return 0;
 }
